@@ -1,0 +1,24 @@
+root@ecs-preguntax2:~# certbot certonly --agree-tos --email francisco@cachate.cl --webroot -w /var/lib/letsencrypt/ -d preguntax.cl -d www.preguntax.cl
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Plugins selected: Authenticator webroot, Installer None
+Obtaining a new certificate
+Performing the following challenges:
+http-01 challenge for preguntax.cl
+http-01 challenge for www.preguntax.cl
+Using the webroot path /var/lib/letsencrypt for all unmatched domains.
+Waiting for verification...
+Cleaning up challenges
+Failed authorization procedure. www.preguntax.cl (http-01): urn:ietf:params:acme:error:dns :: DNS problem: SERVFAIL looking up A for www.preguntax.cl - the domain's nameservers may be malfunctioning, preguntax.cl (http-01): urn:ietf:params:acme:error:dns :: DNS problem: SERVFAIL looking up A for preguntax.cl - the domain's nameservers may be malfunctioning
+
+IMPORTANT NOTES:
+ - The following errors were reported by the server:
+
+   Domain: www.preguntax.cl
+   Type:   None
+   Detail: DNS problem: SERVFAIL looking up A for www.preguntax.cl -
+   the domain's nameservers may be malfunctioning
+
+   Domain: preguntax.cl
+   Type:   None
+   Detail: DNS problem: SERVFAIL looking up A for preguntax.cl - the
+   domain's nameservers may be malfunctioning
